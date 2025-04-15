@@ -7,15 +7,15 @@ export default function Show({ auth, user, tasks, queryParams}) {
     return (
         <AuthenticatedLayout
             header={
-                <h2 className="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
+                <h2 className="font-semibold text-gray-800 dark:text-gray-200 text-xl leading-tight">
                     {`User "${user.name}"`}
                 </h2>
             }
         >
             <Head title={`User "${user.name}"`} />
             <div className="py-12">
-                <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg dark:bg-gray-800">
+                <div className="mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                    <div className="bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg overflow-hidden">
                         <div className="p-6 text-gray-900 dark:text-gray-100">
                             <div>
                                 <img
@@ -24,7 +24,7 @@ export default function Show({ auth, user, tasks, queryParams}) {
                                     className="w-full h-64 object-cover"
                                 />
                             </div>
-                            <div className="grid gap-1 grid-cols-2 mt-2">
+                            <div className="gap-1 grid grid-cols-2 mt-2">
                                 <div>
                                     <div>
                                         <label className="font-bold text-lg">User ID</label>
@@ -75,8 +75,8 @@ export default function Show({ auth, user, tasks, queryParams}) {
             </div>
 
             <div className="pb-12">
-                <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="bg-white shadow-sm sm:rounded-lg dark:bg-gray-800 overflow-hidden">
+                <div className="mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                    <div className="bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg overflow-hidden">
                         <div className="p-6 text-gray-900 dark:text-gray-100">
                         <TasksTable 
                             tasks={tasks} 

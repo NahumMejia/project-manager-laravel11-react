@@ -3,20 +3,20 @@ import { Head, Link } from "@inertiajs/react";
 import {
   PROJECT_STATUS_CLASS_MAP,
   PROJECT_STATUS_TEXT_MAP,
-} from "@/constants.jsx";
+} from "@/Constants.jsx";
 import TasksTable from "../Task/TasksTable";
 export default function Show({ auth, success, project, tasks, queryParams }) {
   return (
     <AuthenticatedLayout
       user={auth.user}
       header={
-        <div className="flex items-center justify-between">
-          <h2 className="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+        <div className="flex justify-between items-center">
+          <h2 className="font-semibold text-gray-800 dark:text-gray-200 text-xl leading-tight">
             {`Project "${project.name}"`}
           </h2>
           <Link
             href={route("project.edit", project.id)}
-            className="bg-emerald-500 py-1 px-3 text-white rounded shadow transition-all hover:bg-emerald-600"
+            className="bg-emerald-500 hover:bg-emerald-600 shadow px-3 py-1 rounded text-white transition-all"
           >
             Edit
           </Link>
@@ -25,8 +25,8 @@ export default function Show({ auth, success, project, tasks, queryParams }) {
     >
       <Head title={`Project "${project.name}"`} />
       <div className="py-12">
-        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-          <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+        <div className="mx-auto sm:px-6 lg:px-8 max-w-7xl">
+          <div className="bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg overflow-hidden">
             <div>
               <img
                 src={project.image_path}
@@ -35,7 +35,7 @@ export default function Show({ auth, success, project, tasks, queryParams }) {
               />
             </div>
             <div className="p-6 text-gray-900 dark:text-gray-100">
-              <div className="grid gap-1 grid-cols-2 mt-2">
+              <div className="gap-1 grid grid-cols-2 mt-2">
                 <div>
                   <div>
                     <label className="font-bold text-lg">Project ID</label>
@@ -90,8 +90,8 @@ export default function Show({ auth, success, project, tasks, queryParams }) {
       </div>
 
       <div className="pb-12">
-        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-          <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+        <div className="mx-auto sm:px-6 lg:px-8 max-w-7xl">
+          <div className="bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg overflow-hidden">
             <div className="p-6 text-gray-900 dark:text-gray-100">
               <TasksTable
                 tasks={tasks}
