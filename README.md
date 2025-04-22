@@ -48,12 +48,12 @@ Before setting up the project, ensure you have the following installed on your s
 - Projects: Monitor project statuses, manage projects, and view project details, including tasks assigned - to each project.
 
 ## Screenshots
-* !["prj-mng-1](images/prj-mng-1.png "prj-mng-1")
-* !["prj-mng-2](images/prj-mng-2.png "prj-mng-2")
-* !["prj-mng-3](images/prj-mng-3.png "prj-mng-3")
-* !["prj-mng-4](images/prj-mng-4.png "prj-mng-4")
-* !["prj-mng-5](images/prj-mng-5.png "prj-mng-5")
-* !["prj-mng-6](images/prj-mng-6.png "prj-mng-6")
-* !["prj-mng-7](images/prj-mng-7.png "prj-mng-7")
-* !["prj-mng-8](images/prj-mng-8.png "prj-mng-8")
-* !["prj-mng-9](images/prj-mng-9.png "prj-mng-9")
+!["prj-mng-1](images/prj-mng-1.png "prj-mng-1")
+!["prj-mng-2](images/prj-mng-2.png "prj-mng-2")
+!["prj-mng-3](images/prj-mng-3.png "prj-mng-3")
+!["prj-mng-4](images/prj-mng-4.png "prj-mng-4")
+!["prj-mng-5](images/prj-mng-5.png "prj-mng-5")
+!["prj-mng-6](images/prj-mng-6.png "prj-mng-6")
+!["prj-mng-7](images/prj-mng-7.png "prj-mng-7")
+!["prj-mng-8](images/prj-mng-8.png "prj-mng-8")
+!["prj-mng-9](images/prj-mng-9.png "prj-mng-9")
