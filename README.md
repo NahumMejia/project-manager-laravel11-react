@@ -1,5 +1,5 @@
 # Project Management
-
+A single-page application for managing your personal or team projects. Easily create, edit, and delete projects, each containing multiple tasks. Upload images for both projects and tasks, track progress by status, and manage your team by assigning users to specific tasks or entire projects.
 
 ## Built With
 
